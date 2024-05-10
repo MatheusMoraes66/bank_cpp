@@ -6,7 +6,7 @@ class Person
 public:
     static int lenght;
 private:
-    int id;
+    int personId;
     std::string firstName;
     std::string lastName;
     std::string dateOfBirth;

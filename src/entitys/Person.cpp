@@ -18,7 +18,7 @@ Person::Person(std::string firstName,
                                             address(address),
                                             taxIdentifier(taxIdentifier)
 {
-    this->id = lenght++;
+    this->personId = lenght++;
     this->lenght++;
 }
 
@@ -34,5 +34,5 @@ std::string Person::getFullName()
 
 int Person::getId()
 {
-    return this->id;
+    return this->personId;
 }
