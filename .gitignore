@@ -1,0 +1,26 @@
+# Compiled object files
+*.o
+*.out
+
+# Executables
+program
+run_away
+
+# Build directory
+/build/
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Dependency directories
+/vendor/
+/libs/
+
+# Temporary files
+*.tmp
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
