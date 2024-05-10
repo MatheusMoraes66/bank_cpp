@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "./Address.hpp"
 
 class Person
 {
@@ -12,17 +13,14 @@ private:
     std::string dateOfBirth;
     std::string email;
     std::string phoneNumber;
-    std::string address;
-    std::string taxIdentifier;
+    Address address;
 public:
     Person(std::string firstName, 
     std::string lastName, 
     std::string dateOfBirth, 
     std::string email,
     std::string phoneNumber,
-    std::string address,
-    std::string taxIdentifier);
+    const Address& address);
     ~Person();
-    std::string getFullName();
     int getId();
 };

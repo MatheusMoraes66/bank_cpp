@@ -9,14 +9,12 @@ Person::Person(std::string firstName,
                std::string dateOfBirth,
                std::string email,
                std::string phoneNumber,
-               std::string address,
-               std::string taxIdentifier) : firstName(firstName),
+               const Address& address) : firstName(firstName),
                                             lastName(lastName),
                                             dateOfBirth(dateOfBirth),
                                             email(email),
                                             phoneNumber(phoneNumber),
-                                            address(address),
-                                            taxIdentifier(taxIdentifier)
+                                            address(address)
 {
     this->personId = lenght++;
     this->lenght++;
@@ -25,11 +23,6 @@ Person::Person(std::string firstName,
 Person::~Person()
 {
     this->lenght--;
-}
-
-std::string Person::getFullName()
-{
-    return this->firstName + " " + this->lastName;
 }
 
 int Person::getId()
