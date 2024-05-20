@@ -8,7 +8,15 @@ public:
 private:
     int customerId;
 public:
-    Customer(const Person& person);
+    Customer(
+        std::string firstName, 
+        std::string lastName, 
+        std::string dateOfBirth, 
+        std::string email, 
+        std::string phoneNumber,
+        const Address& address
+    );
+    std::string getFullName();
     ~Customer();
 
 };

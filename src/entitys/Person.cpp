@@ -25,7 +25,3 @@ Person::~Person()
     this->lenght--;
 }
 
-int Person::getId()
-{
-    return this->personId;
-}

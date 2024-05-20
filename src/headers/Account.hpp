@@ -10,7 +10,6 @@ public:
         SUSPENDED,
         CLOSED
     };
-    Person person;
 // Atributos
 private:
     int id;
@@ -21,6 +20,6 @@ private:
     Status status;
 // Metodos
 public:
-    Account(Status status, const Person& person);
+    Account(Status status);
     ~Account();
 };
