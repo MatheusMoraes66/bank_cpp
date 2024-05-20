@@ -12,7 +12,7 @@ public:
     };
 // Atributos
 private:
-    int id;
+    int accountId;
     int number;
     std::string dateOpened;
     std::string dateClosed;
@@ -21,5 +21,7 @@ private:
 // Metodos
 public:
     Account(Status status);
+    void deposit(float amount);
+    void withdraw(float amount);
     ~Account();
 };

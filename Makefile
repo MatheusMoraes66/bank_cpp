@@ -1,9 +1,10 @@
+CC = g++
 CFLAGS = -Wall -Wextra -std=c++11
 
 SRC_DIR = src
 INC_DIR = include
 BUILD_DIR = build
-TARGET = progam
+TARGET = program
 
 ENTITYS = src/entitys
 
