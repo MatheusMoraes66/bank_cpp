@@ -17,11 +17,11 @@ responsibility(responsibility)
     this->lenght++;
 }
 
+Employee::~Employee() {
+     this->lenght--;
+}
+
 std::string Employee::getFullName() 
 {
     return this->Person::firstName + " " + this->Person::lastName;
-}
-
-Employee::~Employee() {
-     this->lenght--;
 }

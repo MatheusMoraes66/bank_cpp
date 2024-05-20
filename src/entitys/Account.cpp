@@ -4,12 +4,19 @@
 
 int Account::lenght = 0;
 
-Account::Account(Status status) : currentBalance(0),
-                                  status(status)
+Account::Account(Status status, Customer customer) :
+                                                     customer(customer),
+                                                     status(status),
+                                                     currentBalance(0)
 {
     this->number = 393;
     this->accountId = lenght++;
     this->lenght++;
+}
+
+Account::~Account()
+{
+    this->lenght--;
 }
 
 void Account::deposit(float amount)
@@ -36,9 +43,4 @@ void Account::withdraw(float amount)
     }
 
     this->currentBalance -= amount;
-}
-
-Account::~Account()
-{
-    this->lenght--;
 }

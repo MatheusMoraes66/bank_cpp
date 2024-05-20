@@ -16,7 +16,6 @@ public:
         std::string phoneNumber,
         const Address& address
     );
-    std::string getFullName();
     ~Customer();
-
+    std::string getFullName();
 };

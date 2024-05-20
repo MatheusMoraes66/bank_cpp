@@ -15,11 +15,11 @@ Person(firstName, lastName, dateOfBirth, email, phoneNumber,address)
     this->lenght++;
 }
 
+Customer::~Customer() {
+     this->lenght--;
+}
+
 std::string Customer::getFullName()
 {
     return this->Person::firstName + " " + this->Person::lastName;
-}
-
-Customer::~Customer() {
-     this->lenght--;
 }

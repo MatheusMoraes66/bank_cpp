@@ -1,5 +1,5 @@
 #pragma once
-#include "Person.hpp"
+#include "Customer.hpp"
 
 class Account
 {
@@ -10,6 +10,7 @@ public:
         SUSPENDED,
         CLOSED
     };
+    Customer customer;
 // Atributos
 private:
     int accountId;
@@ -20,8 +21,8 @@ private:
     Status status;
 // Metodos
 public:
-    Account(Status status);
+    Account(Status status, Customer customer);
+    ~Account();
     void deposit(float amount);
     void withdraw(float amount);
-    ~Account();
 };

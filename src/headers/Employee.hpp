@@ -17,6 +17,6 @@ public:
         std::string email, 
         std::string phoneNumber,
         const Address& address);
-    std::string getFullName();
     ~Employee();
+    std::string getFullName();
 };
