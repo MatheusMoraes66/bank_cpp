@@ -19,6 +19,7 @@ $(BUILD_DIR):
 	@echo "Criando diretórios de build..."
 	mkdir -p $(BUILD_DIR)
 	mkdir -p $(BUILD_DIR)/entitys
+	mkdir -p $(BUILD_DIR)/entitys/account
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
 	@echo "Compilando $<...$@ "
