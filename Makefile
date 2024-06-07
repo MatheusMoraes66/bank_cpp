@@ -20,6 +20,7 @@ $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 	mkdir -p $(BUILD_DIR)/entitys
 	mkdir -p $(BUILD_DIR)/entitys/account
+	mkdir -p $(BUILD_DIR)/entitys/employee
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
 	@echo "Compilando $<...$@ "
